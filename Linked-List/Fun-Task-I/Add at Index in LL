@@ -1,0 +1,23 @@
+void addIndex(int val, int index){
+
+ if(index<0 || index>size-1){
+  cout<<"improper index passed";
+ }
+ else if(index==0){
+  addFirst(int val);
+ }
+ else if(index==size-1){
+  addLast(int val);
+ }
+else{
+ node* temp=NULL;
+ node* newnode= new node();
+ newnode->val= val;
+  for(int i=0; i<index-1; i++){
+   temp = temp->next;
+  }
+
+  newnode->next= temp->next;
+  temp->next= newnode;
+ 
+}
