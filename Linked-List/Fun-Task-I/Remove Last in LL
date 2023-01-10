@@ -1,0 +1,21 @@
+void removeLast(){
+ if(size==0){
+ cout<<"memory underflow";
+ }
+ else if( head== tail){
+  delete head;
+ }
+ else if(head->next = tail){
+  delete tail;
+  tail = head;
+}
+node* temp = NULL;
+int i=0; 
+while(temp->next!= tail){
+ temp= temp-> next;
+}
+delete tail;
+temp->next= NULL;
+tail= temp;
+ 
+}
