@@ -1,0 +1,10 @@
+void addFirst(int val){
+ node* temp = new node();
+ temp->val = val;
+ temp->next= head;
+ head = temp;
+ if(size ==0)
+    tail= temp;
+   
+ size ++;
+}
